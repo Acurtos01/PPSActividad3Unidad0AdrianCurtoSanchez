@@ -4,8 +4,9 @@
 2. Instalar GIT en nuestro equipo
 3. Enlazar cuenta de GitHub con nuestro equipo mediante SSH
 4. Comprobar la conexión con GitHub
-4. Inicializar un repositorio en nuestro equipo
-5. Subir repositorio a GitHub 
+5. Inicializar un repositorio en nuestro equipo
+6. Subir repositorio a GitHub 
+7. Agregar nuevos cambios
 
 
 ## Crear cuenta en GItHub
@@ -85,3 +86,33 @@ Y creamos el primer commit de nuestro directorio con los fireros e indicamos un 
 
 ## Subir repositorio a GitHub 
 
+Vamos a la ventana principal de nuestro GitHub y en el apartado de "Comenzar un nuevo repositorio" rellenamos el nombre del nuevo repositorio, indicamos si queremos que sea público o privado(en este caso público) y pinchamos en el botón de "Crear nuevo repositorio".
+
+![Create new repository](./images/create_new_repository.png)
+
+Nos redirige a una página donde nos indica los pasos a seguir, donde deberemos selecciona el tipo de conexión dandonos a elegir entre el protocolo HTTP y SSH, como nosotros ya tenemos configurada la conexión SSH será la que elijamos.
+
+![Quick setup](./images/quick_setup.png)
+
+Continuamos siguiendo los pasos de "...o subir un repositorio existente desde la terminal de comandos", simplemente deberemos ejecutar los comandos que nos indica:
+
+```
+git remote add origin git@github.com:Acurtos01/PPSActividad3Unidad0AdrianCurtoSanchez.git
+git branch -M main
+git push -u origin main
+```
+![Connect local with remote](./images/conect_local_with_remote.png)
+
+Como podemos ver ha subido los datos locales al repositorio remoto de forma satisfactoria. Si volvemos a GitHub podremos ver nuestro nuevo repositorio.
+
+![Repository created](./images/repository_created.png)
+
+## 7. Agregar nuevos cambios
+
+Aprovechamos que durante la creación de este manual se han creado nuevos cambios en el repositorio para explicar como se agregan y suben al repositorio.
+
+Agregamos los cambios a git ejecutando de nuevo el comando `git add .` y volvemos a crear un commit con los nuevos cambios `git commit -m "Manual completado"` y subimos los cambios con el comando `git push`.
+
+![Push last commit](./images/push_last_commit.png)
+
+- Nota: para conocer el estado actual de nuestro repositorio y obtener ayuda de como continuar podemos utilizar el comando `git status`.
