@@ -3,6 +3,7 @@
 1. Crear cuenta en GitHub
 2. Instalar GIT en nuestro equipo
 3. Enlazar cuenta de GitHub con nuestro equipo mediante SSH
+4. Comprobar la conexión con GitHub
 4. Inicializar un repositorio en nuestro equipo
 5. Subir repositorio a GitHub 
 
@@ -62,8 +63,25 @@ Tras agregar la clave podemos ver que GitHub nos lista la conexión.
 
 ![GitHub SSH key added](./images/github_ssh_key_agregada.png)
 
+## Comprobar la conexión con GitHub
+
+Abrimos la terminal y lanzamos el comando `ssh -T git@github.com`, cuando nos pregunte si deseamos continuar con la conexión le indicamos que si escribiento "yes" y presionado enter. Si se han seguido bien los pasos anteriores nos montrará un mensaje de confirmación conferme hemos establecido una conexión satisfactoria.
+
+![GitHub check conection](./images/github_check_conection.png)
+
 ## Inicializar un repositorio en nuestro equipo
 
+Inicializamos el respositorio en nuestro equipo con el comando `git init`.
+
+![Git init](./images/git_init.png)
+
+Ahora que se ha incializado el seguimiento de nuestro directorio agragamos los ficheros con `git add .`
+
+![Git add](./images/git_add.png)
+
+Y creamos el primer commit de nuestro directorio con los fireros e indicamos un texto descriptivo `git commit -m "Primer commit"`.
+
+![Git commit](./images/git_commit.png)
 
 ## Subir repositorio a GitHub 
 
