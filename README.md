@@ -1,18 +1,19 @@
 # Unidad 0 - Actividad 3ra5. Git
 
-1. Crear cuenta en GitHub
-2. Instalar GIT en nuestro equipo
-3. Enlazar cuenta de GitHub con nuestro equipo mediante SSH
-4. Comprobar la conexión con GitHub
-5. Inicializar un repositorio en nuestro equipo
-6. Subir repositorio a GitHub 
-7. Agregar nuevos cambios
+1. [Crear cuenta en GitHub](#crear-cuenta-en-github)
+2. [Instalar GIT en nuestro equipo](#instalar-git-en-nuestro-equipo)
+3. [Enlazar cuenta de GitHub con nuestro equipo mediante SSH](#enlazar-cuenta-de-github-con-nuestro-equipo-mediante-ssh)
+4. [Comprobar la conexión con GitHub](#comprobar-la-conexión-con-github)
+5. [Inicializar un repositorio en nuestro equipo](#inicializar-un-repositorio-en-nuestro-equipo)
+6. [Subir repositorio a GitHub](#subir-repositorio-a-github)
+7. [Agregar nuevos cambios](#agregar-nuevos-cambios)
 
 
-## Crear cuenta en GItHub
+## Crear cuenta en GitHub
 Accedemos a [GitHub](https://github.com/signup) para crear una cuenta en la plataforma.
 
 Una vez creada veremos un dashboard como este:
+
 ![GitHub dashboard](./images/github_dashboard.png)
 
 ## Instalar GIT en nuestro equipo
@@ -48,15 +49,15 @@ Nos dirigimos a la configuración de GitHub, accedemos a dicha configuración pi
 
 ![GitHub settings](./images/github_settings.png)
 
-En la sección "Acceso" de la barra lateral, haz clic en Claves SSH y GPG.
+En la sección "Acceso" de la barra lateral, haz clic en **Claves SSH y GPG**.
 
 ![GitHub settings access](./images/github_settings_access.png)
 
-Pinchamos en Nueva clave SSH o en Agregar clave SSH.
+Pinchamos en **Nueva clave SSH o en Agregar clave SSH**.
 
 ![GitHub new ssh key](./images/github_newsshkey.png)
 
-Indicamos un titulo para poder identificar el equipo al que pertenece la clave SSH. Y pegamos la clave en el campo "Clave". Y pinchamos en Agregar clave SSH.
+Indicamos un titulo para poder identificar el equipo al que pertenece la clave SSH. Pegamos la clave en el campo "Clave". Y pinchamos en **Agregar clave SSH**.
 
 ![GitHub add ssh key](./images/github_add_shhkey.png)
 
@@ -86,15 +87,15 @@ Y creamos el primer commit de nuestro directorio con los fireros e indicamos un 
 
 ## Subir repositorio a GitHub 
 
-Vamos a la ventana principal de nuestro GitHub y en el apartado de "Comenzar un nuevo repositorio" rellenamos el nombre del nuevo repositorio, indicamos si queremos que sea público o privado(en este caso público) y pinchamos en el botón de "Crear nuevo repositorio".
+Vamos a la ventana principal de nuestro GitHub y en el apartado de "Comenzar un nuevo repositorio" rellenamos el nombre del nuevo repositorio, indicamos si queremos que sea público o privado(en este caso público) y pinchamos en el botón de **Crear nuevo repositorio**.
 
 ![Create new repository](./images/create_new_repository.png)
 
-Nos redirige a una página donde nos indica los pasos a seguir, donde deberemos selecciona el tipo de conexión dandonos a elegir entre el protocolo HTTP y SSH, como nosotros ya tenemos configurada la conexión SSH será la que elijamos.
+Nos redirige a una página donde nos indica los pasos a seguir, donde deberemos selecciona el tipo de conexión dandonos a elegir entre el protocolo **HTTP y SSH**, como nosotros ya tenemos configurada la conexión SSH será la que elijamos.
 
 ![Quick setup](./images/quick_setup.png)
 
-Continuamos siguiendo los pasos de "...o subir un repositorio existente desde la terminal de comandos", simplemente deberemos ejecutar los comandos que nos indica:
+Continuamos siguiendo los pasos de "*...o subir un repositorio existente desde la terminal de comandos*", simplemente deberemos ejecutar los comandos que nos indica:
 
 ```
 git remote add origin git@github.com:Acurtos01/PPSActividad3Unidad0AdrianCurtoSanchez.git
